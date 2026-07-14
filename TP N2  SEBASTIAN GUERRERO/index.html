@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mundo Cine</title>
+
+    <link rel="stylesheet" href="src/pag.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+</head>
+
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo">
+        <img src="img/logotipo.png" alt="Logo Mundo Cine">
+        <h1>Mundo Cine</h1>
+    </a>
+
+    <div class="buscador">
+        <input type="search" placeholder="Buscar películas, series o videojuegos...">
+        <button>
+            <img src="img/lupa.png" alt="Buscar">
+        </button>
+    </div>
+
+    <input type="checkbox" id="menu">
+    <label for="menu" class="menu-icono">
+        ☰
+    </label>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="peliculas.html">Películas</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="analisis.html">Análisis</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="bienvenida">
+        <h2>Bienvenido a Mundo Cine</h2>
+        <p>
+            Descubre las últimas noticias del mundo del cine, los videojuegos y las series.
+            Explora películas destacadas, análisis y curiosidades sobre los estrenos más esperados.
+        </p>
+    </section>
+
+    <!-- Sección del Carrusel -->
+    <section class="seccion-carrusel">
+        <h2>Lo nuevo</h2>
+        <div class="carrusel-contenedor">
+
+            <!-- Controles mediante botones de opción -->
+            <input type="radio" name="carrusel-control" id="slide-1" checked>
+            <input type="radio" name="carrusel-control" id="slide-2">
+            <input type="radio" name="carrusel-control" id="slide-3">
+            <input type="radio" name="carrusel-control" id="slide-4">
+
+            <div class="carrusel-slides">
+                <div class="slide">
+                    <img src="img/carrusel/gta6.jpg" alt="GTA 6">
+                    <div class="slide-info">
+                        <h3>GTA 6</h3>
+                        <p>El estreno más esperado llega en 2026.</p>
+                    </div>
+                    <label for="slide-4" class="carrusel-btn prev">&#10094;</label>
+                    <label for="slide-2" class="carrusel-btn next">&#10095;</label>
+                </div>
+
+                <div class="slide">
+                    <img src="img/carrusel/assasinscreedblackflag.png" alt="Assassin's Creed Black Flag">
+                    <div class="slide-info">
+                        <h3>Assassin's Creed: Black Flag</h3>
+                        <p>Piratas, mar abierto y una remasterización esperada.</p>
+                    </div>
+                    <label for="slide-1" class="carrusel-btn prev">&#10094;</label>
+                    <label for="slide-3" class="carrusel-btn next">&#10095;</label>
+                </div>
+
+                <div class="slide">
+                    <img src="img/carrusel/laodisea.png" alt="La Odisea">
+                    <div class="slide-info">
+                        <h3>La Odisea</h3>
+                        <p>Christopher Nolan lleva el clásico griego al cine.</p>
+                    </div>
+                    <label for="slide-2" class="carrusel-btn prev">&#10094;</label>
+                    <label for="slide-4" class="carrusel-btn next">&#10095;</label>
+                </div>
+
+                <div class="slide">
+                    <img src="img/carrusel/minionsymonsters.jpg" alt="Minions y Monsters">
+                    <div class="slide-info">
+                        <h3>Minions & Monsters</h3>
+                        <p>Animación y comedia para toda la familia.</p>
+                    </div>
+                    <label for="slide-3" class="carrusel-btn prev">&#10094;</label>
+                    <label for="slide-1" class="carrusel-btn next">&#10095;</label>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sección de Películas Destacadas -->
+    <section>
+        <h2>Películas Destacadas</h2>
+        <div class="contenedor-peliculas">
+            <article class="tarjeta">
+                <img src="img/peliculas/interstellar.jpg" alt="Interstellar">
+                <h2>Interstellar</h2>
+                <p>★★★★★ 9.5/10</p>
+                <p>Un viaje espacial para salvar a la humanidad.</p>
+                <a href="peliculas.html">Ver más</a>
+            </article>
+
+            <article class="tarjeta">
+                <img src="img/peliculas/gladiator.jpg" alt="Gladiator">
+                <h2>Gladiator</h2>
+                <p>★★★★☆ 9.2/10</p>
+                <p>Un general romano busca venganza en la arena.</p>
+                <a href="peliculas.html">Ver más</a>
+            </article>
+
+            <article class="tarjeta">
+                <img src="img/peliculas/forrestgump.jpg" alt="Forrest Gump">
+                <h2>Forrest Gump</h2>
+                <p>★★★★☆ 9.0/10</p>
+                <p>Una vida marcada por bondad y perseverancia.</p>
+                <a href="peliculas.html">Ver más</a>
+            </article>
+
+            <article class="tarjeta">
+                <img src="img/peliculas/toystory1.jpg" alt="Toy Story">
+                <h2>Toy Story</h2>
+                <p>★★★★☆ 8.8/10</p>
+                <p>La película que revolucionó la animación.</p>
+                <a href="peliculas.html">Ver más</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Sección Random -->
+    <section>
+        <h2>Random</h2>
+        <div class="random-grid">
+            <article class="tarjeta">
+                <img src="img/random/gargantuaagujeronegro.jpg" alt="Agujero negro Gargantúa">
+                <h3>Interstellar</h3>
+                <p>El agujero negro "Gargantúa" fue diseñado junto a un físico teórico para que fuera científicamente preciso.</p>
+            </article>
+
+            <article class="tarjeta">
+                <img src="img/random/gta6random.png" alt="GTA 6">
+                <h3>GTA 6</h3>
+                <p>Su tráiler de anuncio superó los 100 millones de reproducciones en menos de 24 horas.</p>
+            </article>
+
+            <article class="tarjeta">
+                <img src="img/random/mc.jpg" alt="Minecraft">
+                <h3>Minecraft</h3>
+                <p>Es uno de los videojuegos más vendidos de la historia, con más de 300 millones de copias.</p>
+            </article>
+
+            <article class="tarjeta">
+                <img src="img/random/twdrandom.jpg" alt="The Walking Dead">
+                <h3>The Walking Dead</h3>
+                <p>Se basa en el cómic homónimo de Robert Kirkman, publicado por primera vez en 2003.</p>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-contenido">
+        <div>
+            <h2>Mundo Cine</h2>
+            <p>Tu rincón favorito para estar al día con el cine, las series y los videojuegos.</p>
+        </div>
+        <div>
+            <h3>Enlaces útiles</h3>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="peliculas.html">Películas</a></li>
+                <li><a href="formulario.html">📩 Recomiéndanos contenido</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Síguenos</h3>
+            <p>Redes Sociales: @MundoCine</p>
+        </div>
+    </div>
+    <p>&copy; 2026 Mundo Cine. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
